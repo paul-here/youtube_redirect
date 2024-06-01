@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function createURLandRedirect(){
         let URLBuilder = ["https://www.youtube.com/results?search_query="];
-        let queryText = document.getElementById('query').value;
-        let qToken = queryText.split(' ');
+        let qToken = document.getElementById('query').value.split(' ');
 
         if (qToken.length >= 1){URLBuilder.push(qToken[0]);}
 
